@@ -1,0 +1,12 @@
+/.htaccess
+/administrator/cache/*
+/cache/*
+!/cache/index.html
+/logs/*
+!/logs/index.html
+/configuration.php
+/mouf/no_commit
+administrator/components/com_moufla/
+components/com_moufla/
+plugins/system/moufla/
+vendor/

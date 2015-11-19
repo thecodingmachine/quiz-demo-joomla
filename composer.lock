@@ -1,0 +1,2091 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "0ba0f292fa864ac2d2ebfb80386f5521",
+    "content-hash": "349f28ed5437128f64e47eea162acb62",
+    "packages": [
+        {
+            "name": "container-interop/container-interop",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/container-interop/container-interop.git",
+                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/container-interop/container-interop/zipball/fc08354828f8fd3245f77a66b9e23a6bca48297e",
+                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Interop\\Container\\": "src/Interop/Container/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
+            "time": "2014-12-30 15:22:37"
+        },
+        {
+            "name": "joomlatools/installer",
+            "version": "v1.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/joomlatools/joomla-composer.git",
+                "reference": "eb0cd5426712ffc7d6c4e0f717219d499db80732"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/joomlatools/joomla-composer/zipball/eb0cd5426712ffc7d6c4e0f717219d499db80732",
+                "reference": "eb0cd5426712ffc7d6c4e0f717219d499db80732",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Joomlatools\\Composer\\ExtensionInstallerPlugin"
+            },
+            "autoload": {
+                "psr-0": {
+                    "Joomlatools\\Composer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPLv3"
+            ],
+            "authors": [
+                {
+                    "name": "Joomlatools",
+                    "email": "info@joomlatools.com",
+                    "homepage": "https://www.joomlatools.com"
+                }
+            ],
+            "description": "A Composer plugin to install Joomla extensions into your installation.",
+            "homepage": "https://github.com/joomlatools/joomla-composer",
+            "keywords": [
+                "composer",
+                "extension",
+                "installer",
+                "joomla"
+            ],
+            "time": "2015-09-06 21:18:44"
+        },
+        {
+            "name": "mouf/html.htmlelement",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/html.html_element.git",
+                "reference": "c8272bf308894c0843e7eeaae30746f3f05464f9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/html.html_element/zipball/c8272bf308894c0843e7eeaae30746f3f05464f9",
+                "reference": "c8272bf308894c0843e7eeaae30746f3f05464f9",
+                "shasum": ""
+            },
+            "require": {
+                "mouf/utils.action.action-interface": "~1.0",
+                "mouf/utils.value.value-interface": "~1.0",
+                "php": ">=5.3.0"
+            },
+            "type": "mouf-library",
+            "extra": {
+                "mouf": {
+                    "logo": "logo.png"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Html\\HtmlElement": "src/",
+                    "Mouf\\Utils\\Action": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "This package contains the HtmlElementInterface interface that can be used to output HTML on a page. It also features base classes implementing this interface.",
+            "homepage": "https://github.com/thecodingmachine/html.html_element",
+            "keywords": [
+                "html",
+                "interface",
+                "tohtml"
+            ],
+            "time": "2014-06-03 20:28:43"
+        },
+        {
+            "name": "mouf/html.renderer",
+            "version": "v1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/html.renderer.git",
+                "reference": "2370d4464f0de0d4c91d67c5d09f779b344d7fd0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/html.renderer/zipball/2370d4464f0de0d4c91d67c5d09f779b344d7fd0",
+                "reference": "2370d4464f0de0d4c91d67c5d09f779b344d7fd0",
+                "shasum": ""
+            },
+            "require": {
+                "mouf/html.htmlelement": "~2.0",
+                "mouf/html.renderer.twig-extensions": "~1.0",
+                "mouf/utils.cache.apc-cache": "~2.0",
+                "mouf/utils.cache.in-memory-cache": "~1.0",
+                "php": ">=5.4.4",
+                "twig/twig": "1.*@stable"
+            },
+            "type": "mouf-library",
+            "extra": {
+                "mouf": {
+                    "install": [
+                        {
+                            "file": "src/install.php",
+                            "type": "file"
+                        }
+                    ],
+                    "logo": "logo.png",
+                    "doc": [
+                        {
+                            "title": "For application developers",
+                            "url": "doc/for_application_developers.md"
+                        },
+                        {
+                            "title": "For package developers",
+                            "url": "doc/for_package_developers.md"
+                        },
+                        {
+                            "title": "For template developers",
+                            "url": "doc/for_template_developers.md"
+                        },
+                        {
+                            "title": "Advanced topics",
+                            "url": "doc/advanced.md"
+                        }
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Html\\Renderer": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "This package contains the rendering mechanism of the Mouf framework. It is a mechanism allowing packages/templates/developers to overload a default template for various HTML objects.",
+            "homepage": "http://mouf-php.com/packages/mouf/html.renderer",
+            "keywords": [
+                "html",
+                "interface",
+                "render",
+                "tohtml"
+            ],
+            "time": "2015-10-14 08:39:26"
+        },
+        {
+            "name": "mouf/html.renderer.twig-extensions",
+            "version": "v1.0.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/html.renderer.twig-extensions.git",
+                "reference": "0a47856fbc93630bb8b26f5ef27d5bc6ffa66175"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/html.renderer.twig-extensions/zipball/0a47856fbc93630bb8b26f5ef27d5bc6ffa66175",
+                "reference": "0a47856fbc93630bb8b26f5ef27d5bc6ffa66175",
+                "shasum": ""
+            },
+            "require": {
+                "container-interop/container-interop": "~1.0",
+                "mouf/html.htmlelement": "~2.0",
+                "mouf/utils.cache.cache-interface": "~2.0",
+                "mouf/utils.constants.debug": "~1.0",
+                "php": ">=5.4.0",
+                "twig/twig": "~1.19"
+            },
+            "type": "mouf-library",
+            "extra": {
+                "mouf": {
+                    "install": [
+                        {
+                            "type": "class",
+                            "class": "Mouf\\Html\\Renderer\\Twig\\MoufTwigEnvironmentInstaller2"
+                        }
+                    ],
+                    "doc": [
+                        {
+                            "title": "Twig extensions",
+                            "url": "doc/twig_extensions.md"
+                        }
+                    ],
+                    "logo": "logo.png"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Html\\Renderer\\Twig": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "This package contains a set of Twig extensions and utility class to ease the use of Twig templates in Mouf.",
+            "homepage": "http://mouf-php.com/packages/mouf/html.renderer.twig-extensions",
+            "keywords": [
+                "html",
+                "interface",
+                "render",
+                "tohtml"
+            ],
+            "time": "2015-10-09 08:16:33"
+        },
+        {
+            "name": "mouf/html.template.templateinterface",
+            "version": "v2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/html.template.templateinterface.git",
+                "reference": "92586fd0542117702054fa348a76ee7da57e48f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/html.template.templateinterface/zipball/92586fd0542117702054fa348a76ee7da57e48f3",
+                "reference": "92586fd0542117702054fa348a76ee7da57e48f3",
+                "shasum": ""
+            },
+            "require": {
+                "mouf/html.renderer": "~1.0",
+                "mouf/html.utils.weblibrarymanager": ">=2.0-dev,<4.0",
+                "php": ">=5.3.0"
+            },
+            "type": "mouf-library",
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Html\\Template": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "This package contains the definition of an HTML template (the TemplateInterface interface) and an helper class to build HTML templates easily (the BaseTemplate class).",
+            "homepage": "https://github.com/thecodingmachine/html.template.templateinterface",
+            "keywords": [
+                "interface",
+                "template",
+                "templateinterface"
+            ],
+            "time": "2014-12-10 16:01:57"
+        },
+        {
+            "name": "mouf/html.utils.weblibrarymanager",
+            "version": "v3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/html.utils.weblibrarymanager.git",
+                "reference": "c88c7a5e1ea80c73f5d257a638f17c9d68c76bba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/html.utils.weblibrarymanager/zipball/c88c7a5e1ea80c73f5d257a638f17c9d68c76bba",
+                "reference": "c88c7a5e1ea80c73f5d257a638f17c9d68c76bba",
+                "shasum": ""
+            },
+            "require": {
+                "mouf/html.htmlelement": "~2.0",
+                "mouf/html.renderer": "~1.0",
+                "mouf/html.utils.weblibrarymanager.component-installer": "~2.1",
+                "mouf/mouf-installer": "~2.0",
+                "php": ">=5.4.0"
+            },
+            "type": "mouf-library",
+            "extra": {
+                "mouf": {
+                    "install": [
+                        {
+                            "type": "class",
+                            "class": "Mouf\\Html\\Utils\\WebLibraryManager\\WebLibraryManagerInstaller"
+                        }
+                    ],
+                    "require-admin": [
+                        "src/WebLibraryAdmin.php"
+                    ],
+                    "doc": [
+                        {
+                            "title": "CHANGELOG",
+                            "url": "doc/CHANGELOG.md"
+                        }
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Html\\Utils\\WebLibraryManager": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "The Javascript/CSS library manager is a PHP class in charge of keeping track of the JS and CSS files that have been included so far in a web page. Basically, you tell the Javascript/CSS library manager to import a JS/CSS file and it will make sure it is included, only once, and that all dependencies are included as well.",
+            "homepage": "https://github.com/thecodingmachine/html.utils.weblibrarymanager",
+            "keywords": [
+                "css",
+                "dependencies",
+                "dependency",
+                "html",
+                "javascript",
+                "mouf"
+            ],
+            "time": "2015-02-12 13:38:09"
+        },
+        {
+            "name": "mouf/html.utils.weblibrarymanager.component-installer",
+            "version": "v2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/html.utils.weblibrarymanager.component-installer.git",
+                "reference": "10bc75d24b41a48b090d17342c5daa9e7d9e6a8e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/html.utils.weblibrarymanager.component-installer/zipball/10bc75d24b41a48b090d17342c5daa9e7d9e6a8e",
+                "reference": "10bc75d24b41a48b090d17342c5daa9e7d9e6a8e",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "1.0.0",
+                "php": ">=5.3.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Mouf\\Html\\Utils\\WebLibraryManager\\ComponentInstaller\\ComponentInstallerPlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Mouf\\Html\\Utils\\WebLibraryManager\\ComponentInstaller\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "This Mouf package contains a Composer installer that will automatically create WebLibrary instances when a 'component' package is installed in Composer. It is designed to be used only with Mouf's WebLibraryManager.",
+            "homepage": "http://mouf-php/packages/mouf/html.utils.weblibrarymanager.component-installer",
+            "keywords": [
+                "css",
+                "dependencies",
+                "dependency",
+                "html",
+                "javascript",
+                "mouf"
+            ],
+            "time": "2015-07-15 13:46:45"
+        },
+        {
+            "name": "mouf/integration.joomla.moufla",
+            "version": "2.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/integration.joomla.moufla.git",
+                "reference": "c0135c5770c5c76be6440f8f917e984498d901a2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/integration.joomla.moufla/zipball/c0135c5770c5c76be6440f8f917e984498d901a2",
+                "reference": "c0135c5770c5c76be6440f8f917e984498d901a2",
+                "shasum": ""
+            },
+            "require": {
+                "mouf/html.template.templateinterface": "~2.0",
+                "mouf/integration.joomla.moufla-joomlacomponent": "~2.0",
+                "mouf/integration.joomla.moufla-joomlaplugin": "~2.0",
+                "mouf/mouf": "~2.0",
+                "mouf/mvc.splash-common": "~7.0",
+                "mouf/utils.constants.debug": "~1.0",
+                "mouf/utils.constants.secret": "~1.0",
+                "php": ">=5.3.0"
+            },
+            "provide": {
+                "mouf/mvc.splash-implementation": "7.0.*"
+            },
+            "type": "mouf-library",
+            "extra": {
+                "mouf": {
+                    "install": [
+                        {
+                            "type": "class",
+                            "class": "Mouf\\Integration\\Joomla\\Moufla\\MouflaInstaller",
+                            "scope": "local",
+                            "description": "Install routers to handle Joomla. This is Moufla!"
+                        }
+                    ],
+                    "logo": "logo.png",
+                    "doc": [
+                        {
+                            "title": "Writing controllers and views",
+                            "url": "doc/mvc.md"
+                        },
+                        {
+                            "title": "Scripts and styles",
+                            "url": "doc/scripts-and-styles.md"
+                        }
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Mouf\\Integration\\Joomla\\Moufla\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                },
+                {
+                    "name": "Guillaume Van Der Putte"
+                }
+            ],
+            "description": "A MVC framework for Joomla based on Mouf and compatible with Splash MVC",
+            "homepage": "https://mouf-php.com/packages/mouf/integration.joomla.moufla",
+            "keywords": [
+                "joomla",
+                "mouf",
+                "mvc",
+                "splash"
+            ],
+            "time": "2015-11-19 14:39:28"
+        },
+        {
+            "name": "mouf/integration.joomla.moufla-joomlacomponent",
+            "version": "2.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/integration.joomla.moufla-joomlacomponent.git",
+                "reference": "cbdba4a25f53d1686197fc61c04a9ad9f47858a9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/integration.joomla.moufla-joomlacomponent/zipball/cbdba4a25f53d1686197fc61c04a9ad9f47858a9",
+                "reference": "cbdba4a25f53d1686197fc61c04a9ad9f47858a9",
+                "shasum": ""
+            },
+            "require": {
+                "joomlatools/installer": "*",
+                "mouf/mouf": "~2.0",
+                "php": ">=5.3.0"
+            },
+            "type": "joomla-installer",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guillaume Van Der Putte",
+                    "email": "g.vanderputte@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "This is the component that interface Mouf with Joomla",
+            "homepage": "https://mouf-php.com/packages/mouf/integration.joomla.moufla-joomlacomponent",
+            "keywords": [
+                "joomla",
+                "mouf",
+                "mvc",
+                "splash"
+            ],
+            "time": "2015-11-18 11:34:53"
+        },
+        {
+            "name": "mouf/integration.joomla.moufla-joomlaplugin",
+            "version": "2.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/integration.joomla.moufla-joomlaplugin.git",
+                "reference": "c46dc34139c7539abb91b180b7c4c3bad13e3946"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/integration.joomla.moufla-joomlaplugin/zipball/c46dc34139c7539abb91b180b7c4c3bad13e3946",
+                "reference": "c46dc34139c7539abb91b180b7c4c3bad13e3946",
+                "shasum": ""
+            },
+            "require": {
+                "joomlatools/installer": "*",
+                "mouf/mouf": "~2.0",
+                "php": ">=5.3.0"
+            },
+            "type": "joomla-installer",
+            "extra": {
+                "installer-name": "moufla",
+                "installer-paths": {
+                    "plugins/system/{$name}/": [
+                        "type:joomla-plugin"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guillaume Van Der Putte",
+                    "email": "g.vanderputte@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "This is the custom router to plug Mouf with Joomla",
+            "homepage": "https://mouf-php.com/packages/mouf/integration.joomla.moufla-joomlaplugin",
+            "keywords": [
+                "joomla",
+                "mouf",
+                "plugin",
+                "route"
+            ],
+            "time": "2015-11-18 11:37:43"
+        },
+        {
+            "name": "mouf/mouf",
+            "version": "v2.0.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/mouf.git",
+                "reference": "87e95fffe31b09fd740c5239bda968aff91f0635"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/mouf/zipball/87e95fffe31b09fd740c5239bda968aff91f0635",
+                "reference": "87e95fffe31b09fd740c5239bda968aff91f0635",
+                "shasum": ""
+            },
+            "require": {
+                "container-interop/container-interop": "~1.0",
+                "mouf/mouf-installer": "~2.0",
+                "mouf/mouf-validators-interface": "~2.0",
+                "php": ">=5.3.9"
+            },
+            "type": "mouf-framework",
+            "extra": {
+                "mouf": {
+                    "doc": [
+                        {
+                            "title": "Installing Mouf",
+                            "url": "doc/installing_mouf.md"
+                        },
+                        {
+                            "title": "Getting started with dependency injection",
+                            "url": "doc/dependency_injection.md",
+                            "children": [
+                                {
+                                    "title": "Using Mouf UI to define instances",
+                                    "url": "doc/mouf_di_ui.md"
+                                },
+                                {
+                                    "title": "Injection techniques",
+                                    "url": "doc/injection_techniques.md"
+                                },
+                                {
+                                    "title": "Supported types",
+                                    "url": "doc/supported_types.md"
+                                },
+                                {
+                                    "title": "Injection via PHP code",
+                                    "url": "doc/declare_instance_via_php_code.md"
+                                },
+                                {
+                                    "title": "Special annotations",
+                                    "url": "doc/mouf_annotations.md"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Configuration management",
+                            "url": "doc/configuration_management.md"
+                        },
+                        {
+                            "title": "Creating a Mouf2 package",
+                            "url": "doc/create_mouf_package.md",
+                            "children": [
+                                {
+                                    "title": "Writing a validator",
+                                    "url": "doc/writing_mouf_validator.md",
+                                    "children": [
+                                        {
+                                            "title": "Legacy validators",
+                                            "url": "doc/mouf_legacy_validators.md"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Writing an install process",
+                                    "url": "doc/install_process.md"
+                                },
+                                {
+                                    "title": "Writing packages documentation",
+                                    "url": "doc/writing_packages_documentation.md"
+                                },
+                                {
+                                    "title": "Extending Mouf user interface",
+                                    "url": "doc/extending_mouf_ui.md"
+                                },
+                                {
+                                    "title": "Managing instances programmatically",
+                                    "url": "doc/managing_instances_programmatically.md"
+                                },
+                                {
+                                    "title": "Utility functions",
+                                    "url": "doc/utility_functions.md"
+                                },
+                                {
+                                    "title": "Integrating your package with full-text search",
+                                    "url": "doc/full_text_search.md"
+                                },
+                                {
+                                    "title": "Weak instances",
+                                    "url": "doc/weak_instances.md"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Troubleshooting",
+                            "url": "doc/troubleshooting.md",
+                            "children": [
+                                {
+                                    "title": "Troubleshooting installation",
+                                    "url": "doc/troubleshooting_install.md"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mouf": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "The Mouf PHP framework: an open-source PHP framework providing an easy way to download, install, use and reuse components, with a graphical user interface.",
+            "homepage": "http://mouf-php.com",
+            "keywords": [
+                "dependency injection",
+                "di",
+                "framework",
+                "inversion of control",
+                "ioc",
+                "mouf"
+            ],
+            "time": "2015-11-17 10:48:56"
+        },
+        {
+            "name": "mouf/mouf-installer",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/mouf-installer.git",
+                "reference": "75cd4295a831b32aabea0b2bb6f4925da6b6e198"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/mouf-installer/zipball/75cd4295a831b32aabea0b2bb6f4925da6b6e198",
+                "reference": "75cd4295a831b32aabea0b2bb6f4925da6b6e198",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "composer-installer",
+            "extra": {
+                "class": [
+                    "Mouf\\Installer\\MoufLibraryInstaller",
+                    "Mouf\\Installer\\MoufFrameworkInstaller"
+                ]
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Installer": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "The Mouf-installer package is a composer in charge of installing any package with the 'mouf-library' type.",
+            "homepage": "http://mouf-php.com",
+            "keywords": [
+                "install",
+                "mouf"
+            ],
+            "time": "2014-06-03 20:47:09"
+        },
+        {
+            "name": "mouf/mouf-validators-interface",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/mouf-validators-interface.git",
+                "reference": "7678d5c0d4e7113aa4f5345e6896933ff8b5e7ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/mouf-validators-interface/zipball/7678d5c0d4e7113aa4f5345e6896933ff8b5e7ce",
+                "reference": "7678d5c0d4e7113aa4f5345e6896933ff8b5e7ce",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Validator": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "The mouf-validators-interface package contains interfaces your classes can implement to provide self-validation in the Mouf interface.",
+            "homepage": "http://mouf-php.com",
+            "keywords": [
+                "mouf",
+                "validators"
+            ],
+            "time": "2013-10-29 18:21:58"
+        },
+        {
+            "name": "mouf/mvc.splash-common",
+            "version": "7.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/mvc.splash-common.git",
+                "reference": "ada645a6dd46122dafb32f36248fada9ca8bcb98"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/mvc.splash-common/zipball/ada645a6dd46122dafb32f36248fada9ca8bcb98",
+                "reference": "ada645a6dd46122dafb32f36248fada9ca8bcb98",
+                "shasum": ""
+            },
+            "require": {
+                "mouf/html.htmlelement": "2.*",
+                "mouf/html.renderer.twig-extensions": "~1.0",
+                "mouf/mouf": ">=2.0.2, <3.0",
+                "mouf/mvc.splash-implementation": "~7.0",
+                "mouf/utils.action.common-action": "~1.0",
+                "mouf/utils.cache.apc-cache": "~2.1",
+                "mouf/utils.cache.cache-interface": "~2.0",
+                "mouf/utils.cache.file-cache": "~2.1",
+                "mouf/utils.common.conditioninterface": "~2.0",
+                "mouf/utils.common.url-interface": "~1.0",
+                "mouf/utils.common.validators": "3.*",
+                "php": ">=5.3.0",
+                "zendframework/zend-diactoros": "~1.0",
+                "zendframework/zend-stratigility": "~1.0"
+            },
+            "type": "mouf-library",
+            "extra": {
+                "mouf": {
+                    "require-admin": [
+                        "src/SplashCommonAdmin.php"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Annotations": "src/",
+                    "Mouf\\Mvc\\Splash": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "The Core part of Splash (an MVC framework). It is used by Splash itself, but also by Drusplash (the Splash wrapper for Drupal)",
+            "homepage": "https://github.com/thecodingmachine/mvc.splash-common",
+            "keywords": [
+                "framework",
+                "mouf",
+                "mvc",
+                "splash",
+                "splash-common"
+            ],
+            "time": "2015-11-17 16:23:02"
+        },
+        {
+            "name": "mouf/utils.action.action-interface",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/utils.action.action-interface.git",
+                "reference": "93caf3ceba6c3fc53ed16f6e8b453778e07c9c7a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/utils.action.action-interface/zipball/93caf3ceba6c3fc53ed16f6e8b453778e07c9c7a",
+                "reference": "93caf3ceba6c3fc53ed16f6e8b453778e07c9c7a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Utils\\Action": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "This package contains an interface used by many objects to say they can do stuff. Actually, they can perform one particular action and has been designed for that. The action performed is completely up to the implementer (sending a mail, storing a result in database, displaying something on the screen...) The concept is very simple, and very powerful at the same time.",
+            "homepage": "https://mouf-php.com/mouf/utils.action.action-interface",
+            "keywords": [
+                "action",
+                "actioninterface",
+                "interface",
+                "mouf"
+            ],
+            "time": "2013-10-29 18:21:59"
+        },
+        {
+            "name": "mouf/utils.action.common-action",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/utils.action.common-action.git",
+                "reference": "9498e24435b96812953cbca91fd20daecbfc549a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/utils.action.common-action/zipball/9498e24435b96812953cbca91fd20daecbfc549a",
+                "reference": "9498e24435b96812953cbca91fd20daecbfc549a",
+                "shasum": ""
+            },
+            "require": {
+                "mouf/utils.action.action-interface": "~1.0",
+                "mouf/utils.value.value-interface": "~1.0",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "mouf": {
+                    "logo": "logo.png"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Utils\\Action": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "This package contains common classes that implement the ActionInterface interface (from the mouf/utils.action.action-interface package).",
+            "homepage": "https://mouf-php.com/mouf/utils.action.common-action",
+            "keywords": [
+                "actioninterface",
+                "mouf"
+            ],
+            "time": "2015-01-23 11:09:24"
+        },
+        {
+            "name": "mouf/utils.cache.apc-cache",
+            "version": "v2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/utils.cache.apc-cache.git",
+                "reference": "0b506ec73c9d0496c7ce74198d7b039311cb71d0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/utils.cache.apc-cache/zipball/0b506ec73c9d0496c7ce74198d7b039311cb71d0",
+                "reference": "0b506ec73c9d0496c7ce74198d7b039311cb71d0",
+                "shasum": ""
+            },
+            "require": {
+                "mouf/mouf-validators-interface": "~2.0",
+                "mouf/utils.cache.cache-interface": "~2.0",
+                "mouf/utils.cache.file-cache": "~2.0",
+                "mouf/utils.constants.secret": "~1.0",
+                "mouf/utils.log.psr.errorlog_logger": "~2.0",
+                "php": ">=5.3.0"
+            },
+            "type": "mouf-library",
+            "extra": {
+                "mouf": {
+                    "install": [
+                        {
+                            "type": "class",
+                            "class": "Mouf\\Utils\\Cache\\ApcCacheInstaller"
+                        }
+                    ],
+                    "logo": "logo.png"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Utils\\Cache": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "This package contains a cache mechanism that relies on the APC caching system. For this cache to work, the APC Pecl package must be enabled.",
+            "homepage": "https://github.com/thecodingmachine/utils.cache.apc-cache",
+            "keywords": [
+                "apc",
+                "cache",
+                "mouf"
+            ],
+            "time": "2015-01-14 15:51:49"
+        },
+        {
+            "name": "mouf/utils.cache.cache-interface",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/utils.cache.cache-interface.git",
+                "reference": "109685126f5759a6376e113c4bf13fd625091243"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/utils.cache.cache-interface/zipball/109685126f5759a6376e113c4bf13fd625091243",
+                "reference": "109685126f5759a6376e113c4bf13fd625091243",
+                "shasum": ""
+            },
+            "require": {
+                "mouf/utils.composite-exception": "~1.0",
+                "php": ">=5.3.0"
+            },
+            "type": "mouf-library",
+            "extra": {
+                "mouf": {
+                    "require-admin": [
+                        "CacheAdmin.php"
+                    ],
+                    "logo": "logo.png"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Utils\\Cache": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "This package only contains the interface that must be implemented by caching classes. Unless you want to implement your own caching method, you should import a cache package that will use this interface. For instance, common.utils.session-cache, or common.utils.file-cache.",
+            "homepage": "https://github.com/thecodingmachine/utils.cache.cache-interface",
+            "keywords": [
+                "cache",
+                "interface",
+                "mouf"
+            ],
+            "time": "2015-09-08 16:07:35"
+        },
+        {
+            "name": "mouf/utils.cache.file-cache",
+            "version": "v2.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/utils.cache.file-cache.git",
+                "reference": "e4f4301eccf8e6cd1bae508b186bd0a4226b3634"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/utils.cache.file-cache/zipball/e4f4301eccf8e6cd1bae508b186bd0a4226b3634",
+                "reference": "e4f4301eccf8e6cd1bae508b186bd0a4226b3634",
+                "shasum": ""
+            },
+            "require": {
+                "mouf/utils.cache.cache-interface": "~2.0",
+                "mouf/utils.constants.secret": "~1.0",
+                "php": ">=5.3.0",
+                "psr/log": "~1.0"
+            },
+            "type": "mouf-library",
+            "extra": {
+                "mouf": {
+                    "install": [
+                        {
+                            "class": "Mouf\\Utils\\Cache\\FileCacheInstaller",
+                            "type": "class"
+                        }
+                    ],
+                    "logo": "logo.png"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Mouf\\Utils\\Cache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "This package contains a cache mechanism that relies on temporary files.",
+            "homepage": "https://github.com/thecodingmachine/utils.cache.file-cache",
+            "keywords": [
+                "cache",
+                "file",
+                "mouf"
+            ],
+            "time": "2015-03-19 10:45:17"
+        },
+        {
+            "name": "mouf/utils.cache.in-memory-cache",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/utils.cache.in-memory-cache.git",
+                "reference": "1e02d9d83d6fa9f86eca0147c80a2659a56a03bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/utils.cache.in-memory-cache/zipball/1e02d9d83d6fa9f86eca0147c80a2659a56a03bd",
+                "reference": "1e02d9d83d6fa9f86eca0147c80a2659a56a03bd",
+                "shasum": ""
+            },
+            "require": {
+                "mouf/utils.cache.cache-interface": "2.*",
+                "php": ">=5.3.0"
+            },
+            "type": "mouf-library",
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Utils\\Cache": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "This package contains the most basic cache mechanism. It stores cache items in an array. It means the cache is flushed as soon as the script returns. It is very basic, but also very fast. You will usually use this mechanism with another one just behind.",
+            "homepage": "https://mouf-php/packages/mouf/utils.cache.local-cache",
+            "keywords": [
+                "cache",
+                "in-memory",
+                "mouf"
+            ],
+            "time": "2015-07-10 13:31:07"
+        },
+        {
+            "name": "mouf/utils.common.conditioninterface",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/utils.common.conditioninterface.git",
+                "reference": "d38b67427a68bd7e37615c08ba28182e6c1867f1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/utils.common.conditioninterface/zipball/d38b67427a68bd7e37615c08ba28182e6c1867f1",
+                "reference": "d38b67427a68bd7e37615c08ba28182e6c1867f1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "mouf-library",
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Utils\\Common\\ConditionInterface": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "This package contains one interface for condition, and a few classes that implement it. For instance, AndCondition that requires all conditions to be met, and OrCondition that requires at least one condition to be met. A condition is a class that possesses an 'isOk' method. The condition returns true if the condition is met, and false otherwise.",
+            "homepage": "https://github.com/thecodingmachine/utils.common.conditioninterface",
+            "keywords": [
+                "condition",
+                "interface"
+            ],
+            "time": "2015-01-28 15:50:43"
+        },
+        {
+            "name": "mouf/utils.common.url-interface",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/utils.common.url-interface.git",
+                "reference": "2b6aa6502b01fcfe55a8bbb114249c15e3ec6610"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/utils.common.url-interface/zipball/2b6aa6502b01fcfe55a8bbb114249c15e3ec6610",
+                "reference": "2b6aa6502b01fcfe55a8bbb114249c15e3ec6610",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "mouf": {
+                    "logo": "logo.png"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Utils\\Common\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "This package contains an interface used by many objects to say they represent a URL. The concept is very simple, the object implements a getUrl method, and that's it!",
+            "homepage": "https://mouf-php.com/packages/mouf/utils.common.url-interface",
+            "keywords": [
+                "interface",
+                "mouf",
+                "url",
+                "urlinterface"
+            ],
+            "time": "2013-10-29 18:21:59"
+        },
+        {
+            "name": "mouf/utils.common.validators",
+            "version": "v3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/utils.common.validators.git",
+                "reference": "2c2e5ded2c3c5b2185838994ea99681a51952f42"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/utils.common.validators/zipball/2c2e5ded2c3c5b2185838994ea99681a51952f42",
+                "reference": "2c2e5ded2c3c5b2185838994ea99681a51952f42",
+                "shasum": ""
+            },
+            "require": {
+                "mouf/utils.i18n.fine": ">=3.0-dev,<4.0",
+                "php": ">=5.3.0"
+            },
+            "type": "mouf-library",
+            "extra": {
+                "mouf": {
+                    "install": [
+                        {
+                            "type": "file",
+                            "file": "src/validatorsInstall.php"
+                        }
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Utils\\Common\\Validators\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "This package contains typical validators to be used in your application. A validator is a class that decides whether a string is valid or not. For instance, you could use an EmailValidator to validate that a string is a mail, etc...",
+            "homepage": "https://github.com/thecodingmachine/utils.common.validators",
+            "keywords": [
+                "utils",
+                "validators"
+            ],
+            "time": "2014-06-04 16:32:03"
+        },
+        {
+            "name": "mouf/utils.composite-exception",
+            "version": "1.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/utils.composite-exception.git",
+                "reference": "f887828a2730e9591e73b0d533c0b4f3b5c5872c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/utils.composite-exception/zipball/f887828a2730e9591e73b0d533c0b4f3b5c5872c",
+                "reference": "f887828a2730e9591e73b0d533c0b4f3b5c5872c",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0",
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mouf\\Utils\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "This project contains a simple PHP exception that can aggregate multiple exceptions in one.",
+            "time": "2015-09-18 15:40:51"
+        },
+        {
+            "name": "mouf/utils.constants.debug",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/utils.constants.debug.git",
+                "reference": "df2122944c8e3aadb1c8221aea732b5de9ce74ca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/utils.constants.debug/zipball/df2122944c8e3aadb1c8221aea732b5de9ce74ca",
+                "reference": "df2122944c8e3aadb1c8221aea732b5de9ce74ca",
+                "shasum": ""
+            },
+            "require": {
+                "mouf/mouf-installer": "~2.0",
+                "php": ">=5.3.0"
+            },
+            "type": "mouf-library",
+            "extra": {
+                "mouf": {
+                    "install": [
+                        {
+                            "type": "class",
+                            "class": "Mouf\\Utils\\Constants\\DebugInstaller"
+                        }
+                    ],
+                    "logo": "logo.png"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Utils\\Constants\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "This package contains a simple installer for Mouf that will create a constant 'DEBUG' in your project and initialize it to true. Useful for packages supporting a 'debug' mode.",
+            "homepage": "http://mouf-php.com/packages/mouf/utils.constants.debug",
+            "keywords": [
+                "constant",
+                "debug",
+                "mouf"
+            ],
+            "time": "2014-06-16 09:18:43"
+        },
+        {
+            "name": "mouf/utils.constants.secret",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/utils.constants.secret.git",
+                "reference": "8ed977b1a5dd1caf7641d6ffe0570cccebd768b5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/utils.constants.secret/zipball/8ed977b1a5dd1caf7641d6ffe0570cccebd768b5",
+                "reference": "8ed977b1a5dd1caf7641d6ffe0570cccebd768b5",
+                "shasum": ""
+            },
+            "require": {
+                "mouf/mouf-installer": "~2.0",
+                "php": ">=5.3.0"
+            },
+            "type": "mouf-library",
+            "extra": {
+                "mouf": {
+                    "install": [
+                        {
+                            "type": "class",
+                            "class": "Mouf\\Utils\\Constants\\SecretInstaller"
+                        }
+                    ],
+                    "logo": "logo.png"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Utils\\Constants\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "This package contains a simple installer for Mouf that will create a constant 'SECRET' in your project and initialize it to some random value.",
+            "homepage": "https://mouf-php.com/packages/mouf/utils.constants.secret",
+            "keywords": [
+                "mouf",
+                "random",
+                "secret"
+            ],
+            "time": "2013-11-05 16:10:29"
+        },
+        {
+            "name": "mouf/utils.i18n.fine",
+            "version": "v3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/utils.i18n.fine.git",
+                "reference": "43a9661ceb0fb128eb03d2d23ca9dca7e7ce5129"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/utils.i18n.fine/zipball/43a9661ceb0fb128eb03d2d23ca9dca7e7ce5129",
+                "reference": "43a9661ceb0fb128eb03d2d23ca9dca7e7ce5129",
+                "shasum": ""
+            },
+            "require": {
+                "mouf/mouf-installer": "~2.0",
+                "php": ">=5.3.0"
+            },
+            "type": "mouf-library",
+            "extra": {
+                "mouf": {
+                    "install": [
+                        {
+                            "type": "file",
+                            "file": "src/install.php"
+                        }
+                    ],
+                    "require-admin": [
+                        "src/FineAdmin.php"
+                    ],
+                    "doc": [
+                        {
+                            "title": "Install",
+                            "url": "doc/install.md"
+                        },
+                        {
+                            "title": "Using FINE",
+                            "url": "doc/using_fine.md"
+                        },
+                        {
+                            "title": "Tutorial",
+                            "url": "doc/tutorial.md"
+                        },
+                        {
+                            "title": "Date functions",
+                            "url": "doc/date_functions.md"
+                        },
+                        {
+                            "title": "Currency functions",
+                            "url": "doc/currency_functions.md"
+                        }
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Utils\\I18n\\Fine\\": "src/"
+                },
+                "files": [
+                    "src/msgFunctions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                },
+                {
+                    "name": "Marc TEYSSIER",
+                    "email": "m.teyssier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "Fine is a PHP internationalisation package. It will help you provide applications that support several languages. FINE means: Fine is not english :). Translation is performed using PHP mapping files, but you will have a nice graphical interface in the Mouf framework to write your own translated messages.",
+            "homepage": "https://github.com/thecodingmachine/utils.i18n.fine",
+            "keywords": [
+                "fine",
+                "i18n",
+                "internationalisation",
+                "mouf"
+            ],
+            "time": "2015-04-15 07:21:29"
+        },
+        {
+            "name": "mouf/utils.log.psr.errorlog_logger",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/utils.log.psr.errorlog_logger.git",
+                "reference": "ec7335e729689727bd832f17eb34be5951cedf52"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/utils.log.psr.errorlog_logger/zipball/ec7335e729689727bd832f17eb34be5951cedf52",
+                "reference": "ec7335e729689727bd832f17eb34be5951cedf52",
+                "shasum": ""
+            },
+            "require": {
+                "mouf/mouf-installer": "~2.0",
+                "php": ">=5.3.0",
+                "psr/log": "~1.0"
+            },
+            "type": "mouf-library",
+            "extra": {
+                "mouf": {
+                    "install": [
+                        {
+                            "type": "class",
+                            "class": "Mouf\\Utils\\Log\\Psr\\ErrorLogLoggerInstaller"
+                        }
+                    ],
+                    "logo": "logo.png"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Utils\\Log\\Psr\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "This package contains a PSR-3 compatible logger that logs messages directly to the PHP error log (using the error_log PHP function)",
+            "homepage": "https://mouf-php.com/packages/mouf/utils.log.psr.errorlog_logger",
+            "keywords": [
+                "error_log",
+                "log",
+                "logger"
+            ],
+            "time": "2013-10-29 18:36:52"
+        },
+        {
+            "name": "mouf/utils.package-builder",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/utils.package-builder.git",
+                "reference": "14a82a1a0e0fda503e6152d65900623cd73f6202"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/utils.package-builder/zipball/14a82a1a0e0fda503e6152d65900623cd73f6202",
+                "reference": "14a82a1a0e0fda503e6152d65900623cd73f6202",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "mouf-library",
+            "extra": {
+                "mouf": {
+                    "logo": "logo.png",
+                    "require-admin": [
+                        "src/PackageBuilderAdmin.php"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Utils\\PackageBuilder\\Export\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "This package contains a set of utility functions for Mouf to ease the way you can build packages.",
+            "homepage": "http://mouf-php.com/packages/mouf/utils.package-builder",
+            "keywords": [
+                "mouf",
+                "package"
+            ],
+            "time": "2015-10-08 18:58:13"
+        },
+        {
+            "name": "mouf/utils.value.value-interface",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/utils.value.value-interface.git",
+                "reference": "3825f2734d2d88b3be1cbd480392cf0170d3170e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/utils.value.value-interface/zipball/3825f2734d2d88b3be1cbd480392cf0170d3170e",
+                "reference": "3825f2734d2d88b3be1cbd480392cf0170d3170e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "mouf": {
+                    "logo": "logo.png"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Utils\\Value": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "This package contains an interface used by many objects to say they represent a value that can be computed. The concept is very simple, and very powerful at the same time.",
+            "homepage": "https://mouf-php.com/mouf/utils.value.value-interface",
+            "keywords": [
+                "interface",
+                "mouf",
+                "value"
+            ],
+            "time": "2013-10-29 18:22:00"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
+                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2015-05-04 20:22:00"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Psr\\Log\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2012-12-21 11:40:51"
+        },
+        {
+            "name": "thecodingmachine/quiz-module",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/quiz-module.git",
+                "reference": "48ac0276a6edd0205206835a459a5b67364bb069"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/quiz-module/zipball/48ac0276a6edd0205206835a459a5b67364bb069",
+                "reference": "48ac0276a6edd0205206835a459a5b67364bb069",
+                "shasum": ""
+            },
+            "require": {
+                "mouf/mvc.splash-common": "~7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TheCodingMachine\\Quiz\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "keywords": [
+                "mouf",
+                "psr-7",
+                "quiz"
+            ],
+            "support": {
+                "source": "https://github.com/thecodingmachine/quiz-module/tree/master",
+                "issues": "https://github.com/thecodingmachine/quiz-module/issues"
+            },
+            "time": "2015-11-18 17:50:20"
+        },
+        {
+            "name": "twig/twig",
+            "version": "v1.23.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "d9b6333ae8dd2c8e3fd256e127548def0bc614c6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/d9b6333ae8dd2c8e3fd256e127548def0bc614c6",
+                "reference": "d9b6333ae8dd2c8e3fd256e127548def0bc614c6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.7"
+            },
+            "require-dev": {
+                "symfony/debug": "~2.7",
+                "symfony/phpunit-bridge": "~2.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.23-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Twig_": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                },
+                {
+                    "name": "Twig Team",
+                    "homepage": "http://twig.sensiolabs.org/contributors",
+                    "role": "Contributors"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "http://twig.sensiolabs.org",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2015-11-05 12:49:06"
+        },
+        {
+            "name": "zendframework/zend-diactoros",
+            "version": "1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-diactoros.git",
+                "reference": "3f0ce6c0ba2106e018fb514a9f09dbb91eb6bfd0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/3f0ce6c0ba2106e018fb514a9f09dbb91eb6bfd0",
+                "reference": "3f0ce6c0ba2106e018fb514a9f09dbb91eb6bfd0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "~1.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.6",
+                "squizlabs/php_codesniffer": "^2.3.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev",
+                    "dev-develop": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Diactoros\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "description": "PSR HTTP Message implementations",
+            "homepage": "https://github.com/zendframework/zend-diactoros",
+            "keywords": [
+                "http",
+                "psr",
+                "psr-7"
+            ],
+            "time": "2015-10-16 15:24:05"
+        },
+        {
+            "name": "zendframework/zend-escaper",
+            "version": "2.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-escaper.git",
+                "reference": "a4b227d8a477f4e7e9073f8e0a7ae7dbd3104a73"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-escaper/zipball/a4b227d8a477f4e7e9073f8e0a7ae7dbd3104a73",
+                "reference": "a4b227d8a477f4e7e9073f8e0a7ae7dbd3104a73",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.23"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "1.7.*",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev",
+                    "dev-develop": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Escaper\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "homepage": "https://github.com/zendframework/zend-escaper",
+            "keywords": [
+                "escaper",
+                "zf2"
+            ],
+            "time": "2015-06-03 14:05:37"
+        },
+        {
+            "name": "zendframework/zend-stratigility",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-stratigility.git",
+                "reference": "8c01ddf62131f67c51f51dad7fa433374aa68a27"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-stratigility/zipball/8c01ddf62131f67c51f51dad7fa433374aa68a27",
+                "reference": "8c01ddf62131f67c51f51dad7fa433374aa68a27",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.8",
+                "psr/http-message": "~1.0.0",
+                "zendframework/zend-escaper": "~2.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.7",
+                "squizlabs/php_codesniffer": "^2.3.1",
+                "zendframework/zend-diactoros": "~1.0"
+            },
+            "suggest": {
+                "psr/http-message-implementation": "Please install a psr/http-message-implementation to consume Stratigility; e.g., zendframework/zend-diactoros"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev",
+                    "dev-develop": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Stratigility\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Middleware for PHP",
+            "homepage": "https://github.com/zendframework/zend-stratigility",
+            "keywords": [
+                "http",
+                "middleware",
+                "psr-7"
+            ],
+            "time": "2015-10-09 20:16:34"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

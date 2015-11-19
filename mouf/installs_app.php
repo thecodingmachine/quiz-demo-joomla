@@ -75,11 +75,4 @@ return array (
     'file' => 'src/validatorsInstall.php',
     'package' => 'mouf/utils.common.validators',
   ),
-  10 => 
-  array (
-    'status' => 'done',
-    'type' => 'file',
-    'file' => 'src/splashCommonInstall.php',
-    'package' => 'mouf/mvc.splash-common',
-  ),
 );

@@ -510,7 +510,7 @@ $moufManager->addComponentInstances(array (
       ),
     ),
   ),
-  'quizController' =>
+  'quizController' => 
   array (
     'class' => 'TheCodingMachine\\Quiz\\Controllers\\QuizController',
     'external' => false,
@@ -612,51 +612,6 @@ $moufManager->addComponentInstances(array (
       array (
         'value' => 'vendor/mouf/html.utils.weblibrarymanager/javascript/rootUrl.php',
         'parametertype' => 'primitive',
-        'type' => 'string',
-        'metadata' => 
-        array (
-        ),
-      ),
-    ),
-  ),
-  'sampleController' => 
-  array (
-    'class' => 'MyApp\\Controllers\\SampleController',
-    'external' => false,
-    'weak' => false,
-    'constructor' => 
-    array (
-      0 => 
-      array (
-        'value' => 'psr.errorLogLogger',
-        'parametertype' => 'object',
-        'type' => 'string',
-        'metadata' => 
-        array (
-        ),
-      ),
-      1 => 
-      array (
-        'value' => 'joomlaTemplate',
-        'parametertype' => 'object',
-        'type' => 'string',
-        'metadata' => 
-        array (
-        ),
-      ),
-      2 => 
-      array (
-        'value' => 'block.content',
-        'parametertype' => 'object',
-        'type' => 'string',
-        'metadata' => 
-        array (
-        ),
-      ),
-      3 => 
-      array (
-        'value' => 'twigEnvironment',
-        'parametertype' => 'object',
         'type' => 'string',
         'metadata' => 
         array (
@@ -1141,13 +1096,6 @@ return rtrim(sys_get_temp_dir(), '/\\').'/mouftwigtemplatemain_'.$posixGetuid.st
 	 */
 	 public static function getRootUrlJsFile() {
 	 	return MoufManager::getMoufManager()->get('rootUrlJsFile');
-	 }
-
-	/**
-	 * @return MyApp\Controllers\SampleController
-	 */
-	 public static function getSampleController() {
-	 	return MoufManager::getMoufManager()->get('sampleController');
 	 }
 
 	/**

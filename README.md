@@ -13,7 +13,9 @@ Installation
 - Clone the repository
 - Run `composer install`
 - Browse to the website root directory and run Joomla install
+- Set-up URL rewriting by copying `htaccess.txt` into `.htaccess`, and then configuring the `RewriteBase` setting into 
+  `.htaccess` file
 - Browse to http://[your-website]/[path-to-joomla]/vendor/mouf/mouf and run Mouf install process
-- Connect to Joomla administration http://[your-website]/[path-to-joomla]/wp-admin
+- Connect to Joomla administration http://[your-website]/[path-to-joomla]/administrator
 - You are done!
 - Now, simply browse to: http://[your-website]/[path-to-joomla]/quiz

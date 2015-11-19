@@ -1,0 +1,23 @@
+{
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:thecodingmachine/quiz-module.git"
+    }
+  ],
+  "autoload" : {
+    "psr-0" : {
+      "MyApp" : "src/",
+      "TheCodingMachine\\Quiz" : "src/"
+    }
+  },
+  "require" : {
+    "mouf/mouf" : "~2.0",
+    "mouf/integration.joomla.moufla" : "~2.0",
+    "mouf/utils.package-builder": "^1.0",
+    "thecodingmachine/quiz-module": "*"
+
+  },
+  "minimum-stability" : "dev",
+  "prefer-stable": true
+}

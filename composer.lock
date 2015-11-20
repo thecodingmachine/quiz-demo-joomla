@@ -849,12 +849,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecodingmachine/mvc.splash-common.git",
-                "reference": "ada645a6dd46122dafb32f36248fada9ca8bcb98"
+                "reference": "e5492a17228de7958b5f28b769ece10e23c6fcfe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecodingmachine/mvc.splash-common/zipball/ada645a6dd46122dafb32f36248fada9ca8bcb98",
-                "reference": "ada645a6dd46122dafb32f36248fada9ca8bcb98",
+                "url": "https://api.github.com/repos/thecodingmachine/mvc.splash-common/zipball/e5492a17228de7958b5f28b769ece10e23c6fcfe",
+                "reference": "e5492a17228de7958b5f28b769ece10e23c6fcfe",
                 "shasum": ""
             },
             "require": {
@@ -907,7 +907,7 @@
                 "splash",
                 "splash-common"
             ],
-            "time": "2015-11-17 16:23:02"
+            "time": "2015-11-20 09:36:22"
         },
         {
             "name": "mouf/utils.action.action-interface",

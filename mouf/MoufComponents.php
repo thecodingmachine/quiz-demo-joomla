@@ -415,12 +415,6 @@ $moufManager->addComponentInstances(array (
       ),
     ),
   ),
-  'mouflaNotFoundRouter' => 
-  array (
-    'class' => 'Mouf\\Integration\\Joomla\\Moufla\\MouflaNotFoundRouter',
-    'external' => false,
-    'weak' => false,
-  ),
   'numericValidatorDecimals' => 
   array (
     'class' => 'Mouf\\Utils\\Common\\Validators\\NumericValidator',
@@ -1033,13 +1027,6 @@ return rtrim(sys_get_temp_dir(), '/\\').'/mouftwigtemplatemain_'.$posixGetuid.st
 	 */
 	 public static function getMoufTwigExtension() {
 	 	return MoufManager::getMoufManager()->get('moufTwigExtension');
-	 }
-
-	/**
-	 * @return Mouf\Integration\Joomla\Moufla\MouflaNotFoundRouter
-	 */
-	 public static function getMouflaNotFoundRouter() {
-	 	return MoufManager::getMoufManager()->get('mouflaNotFoundRouter');
 	 }
 
 	/**

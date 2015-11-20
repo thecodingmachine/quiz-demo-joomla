@@ -1833,12 +1833,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecodingmachine/quiz-module.git",
-                "reference": "48ac0276a6edd0205206835a459a5b67364bb069"
+                "reference": "ad0d2904f38dbf21f2e77b88ca9c71865bbdba59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecodingmachine/quiz-module/zipball/48ac0276a6edd0205206835a459a5b67364bb069",
-                "reference": "48ac0276a6edd0205206835a459a5b67364bb069",
+                "url": "https://api.github.com/repos/thecodingmachine/quiz-module/zipball/ad0d2904f38dbf21f2e77b88ca9c71865bbdba59",
+                "reference": "ad0d2904f38dbf21f2e77b88ca9c71865bbdba59",
                 "shasum": ""
             },
             "require": {
@@ -1869,7 +1869,7 @@
                 "source": "https://github.com/thecodingmachine/quiz-module/tree/master",
                 "issues": "https://github.com/thecodingmachine/quiz-module/issues"
             },
-            "time": "2015-11-18 17:50:20"
+            "time": "2015-11-20 16:19:42"
         },
         {
             "name": "twig/twig",

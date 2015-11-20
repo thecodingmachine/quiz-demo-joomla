@@ -26,80 +26,6 @@ $moufManager->setAllVariables(array (
 ));
 
 $moufManager->addComponentInstances(array (
-  '__anonymous__c6de_338351_1447781133898' => 
-  array (
-    'class' => 'TheCodingMachine\\Quiz\\Model\\Quiz',
-    'external' => false,
-    'weak' => true,
-    'anonymous' => true,
-    'constructor' => 
-    array (
-      0 => 
-      array (
-        'value' => 'PHP Ninja!',
-        'parametertype' => 'primitive',
-        'type' => 'string',
-        'metadata' => 
-        array (
-        ),
-      ),
-      1 => 
-      array (
-        'value' => 
-        array (
-          0 => '__anonymous__c6de_935290_1447781182796',
-        ),
-        'parametertype' => 'object',
-        'type' => 'string',
-        'metadata' => 
-        array (
-        ),
-      ),
-    ),
-  ),
-  '__anonymous__c6de_935290_1447781182796' => 
-  array (
-    'class' => 'TheCodingMachine\\Quiz\\Model\\Question',
-    'external' => false,
-    'weak' => true,
-    'anonymous' => true,
-    'constructor' => 
-    array (
-      0 => 
-      array (
-        'value' => '<p>What will this code print?</p><pre>var_dump(0.1+0.2==0.3);</pre>',
-        'parametertype' => 'primitive',
-        'type' => 'string',
-        'metadata' => 
-        array (
-        ),
-      ),
-      1 => 
-      array (
-        'value' => 
-        array (
-          0 => '<code>true</code>',
-          1 => '<code>false</code>',
-          2 => '<code>null</code>',
-          3 => '<code>INF</code>',
-        ),
-        'parametertype' => 'primitive',
-        'type' => 'string',
-        'metadata' => 
-        array (
-        ),
-      ),
-      2 => 
-      array (
-        'value' => '1',
-        'parametertype' => 'primitive',
-        'type' => 'string',
-        'metadata' => 
-        array (
-        ),
-      ),
-    ),
-  ),
   '__anonymous__c6de_944173_1447775990128' => 
   array (
     'class' => 'Mouf\\Mvc\\Splash\\Routers\\Router',
@@ -504,63 +430,6 @@ $moufManager->addComponentInstances(array (
       ),
     ),
   ),
-  'quizController' => 
-  array (
-    'class' => 'TheCodingMachine\\Quiz\\Controllers\\QuizController',
-    'external' => false,
-    'weak' => false,
-    'constructor' => 
-    array (
-      0 => 
-      array (
-        'value' => 'psr.errorLogLogger',
-        'parametertype' => 'object',
-        'type' => 'string',
-        'metadata' => 
-        array (
-        ),
-      ),
-      1 => 
-      array (
-        'value' => 'joomlaTemplate',
-        'parametertype' => 'object',
-        'type' => 'string',
-        'metadata' => 
-        array (
-        ),
-      ),
-      2 => 
-      array (
-        'value' => 'block.content',
-        'parametertype' => 'object',
-        'type' => 'string',
-        'metadata' => 
-        array (
-        ),
-      ),
-      3 => 
-      array (
-        'value' => 'twigEnvironment',
-        'parametertype' => 'object',
-        'type' => 'string',
-        'metadata' => 
-        array (
-        ),
-      ),
-      4 => 
-      array (
-        'value' => 
-        array (
-          0 => '__anonymous__c6de_338351_1447781133898',
-        ),
-        'parametertype' => 'object',
-        'type' => 'string',
-        'metadata' => 
-        array (
-        ),
-      ),
-    ),
-  ),
   'rendererCacheService' => 
   array (
     'class' => 'Mouf\\Utils\\Cache\\InMemoryCache',
@@ -881,6 +750,931 @@ return rtrim(sys_get_temp_dir(), \'/\\\\\').\'/mouftwigtemplatemain_\'.$posixGet
       'setLanguageDetection' => 'validatorsBrowserLanguageDetection',
     ),
   ),
+    'quiz.main.phpfig' =>
+        array (
+            'class' => 'TheCodingMachine\\Quiz\\Model\\Quiz',
+            'external' => false,
+            'weak' => false,
+            'constructor' =>
+                array (
+                    0 =>
+                        array (
+                            'value' => 'PHP-FIG quiz',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    1 =>
+                        array (
+                            'value' =>
+                                array (
+                                    0 => 'quiz.phpfig.q1',
+                                    1 => 'quiz.phpfig.q2',
+                                    2 => 'quiz.phpfig.q3',
+                                    3 => 'quiz.phpfig.q4',
+                                    4 => 'quiz.phpfig.q5',
+                                ),
+                            'parametertype' => 'object',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                ),
+        ),
+    'quiz.main.phpninja' =>
+        array (
+            'class' => 'TheCodingMachine\\Quiz\\Model\\Quiz',
+            'external' => false,
+            'weak' => false,
+            'constructor' =>
+                array (
+                    0 =>
+                        array (
+                            'value' => 'PHP Ninja!',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    1 =>
+                        array (
+                            'value' =>
+                                array (
+                                    0 => 'quiz.phpninja.q1',
+                                    1 => 'quiz.phpninja.q2',
+                                    2 => 'quiz.phpninja.q3',
+                                    3 => 'quiz.phpninja.q4',
+                                    4 => 'quiz.phpninja.q5',
+                                    5 => 'quiz.phpninja.q6',
+                                ),
+                            'parametertype' => 'object',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                ),
+        ),
+    'quiz.main.phpstandard' =>
+        array (
+            'class' => 'TheCodingMachine\\Quiz\\Model\\Quiz',
+            'external' => false,
+            'weak' => false,
+            'constructor' =>
+                array (
+                    0 =>
+                        array (
+                            'value' => 'PHP standard quiz',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    1 =>
+                        array (
+                            'value' =>
+                                array (
+                                    0 => 'quiz.phpstandard.q1',
+                                    1 => 'quiz.phpstandard.q2',
+                                    2 => 'quiz.phpstandard.q3',
+                                    3 => 'quiz.phpstandard.q4',
+                                    4 => 'quiz.phpstandard.q5',
+                                ),
+                            'parametertype' => 'object',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                ),
+        ),
+    'quiz.phpfig.q1' =>
+        array (
+            'class' => 'TheCodingMachine\\Quiz\\Model\\Question',
+            'external' => false,
+            'weak' => false,
+            'constructor' =>
+                array (
+                    0 =>
+                        array (
+                            'value' => 'In PSR-3, if I want to log an exception, I should write:',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    1 =>
+                        array (
+                            'value' =>
+                                array (
+                                    0 => '<code>$logger->error($exception);</code>',
+                                    1 => '<code>$logger->error(\'My message\', $exception);</code>',
+                                    2 => '<code>$logger->error(\'FATAL\', \'My message\', $exception);</code>',
+                                    3 => '<code>$logger->error(\'My message\', [ \'exception\' => $exception ]);</code>',
+                                ),
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    2 =>
+                        array (
+                            'value' => '3',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    3 =>
+                        array (
+                            'value' => 'PSR3 states that: "If an Exception object is passed in the context data, it MUST be in the \'exception\' key."',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                ),
+        ),
+    'quiz.phpfig.q2' =>
+        array (
+            'class' => 'TheCodingMachine\\Quiz\\Model\\Question',
+            'external' => false,
+            'weak' => false,
+            'constructor' =>
+                array (
+                    0 =>
+                        array (
+                            'value' => 'Which statement is true?',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    1 =>
+                        array (
+                            'value' =>
+                                array (
+                                    0 => 'PSR-4 improves PSR-0 by allowing a shortening of the directory structure',
+                                    1 => 'PSR-4 improves on PSR-2 by adding PHP-7 coding style',
+                                    2 => 'PSR-4 proposes a cache interface',
+                                    3 => 'PSR-4 standardizes PHP-DOC',
+                                ),
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    2 =>
+                        array (
+                            'value' => '0',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                ),
+        ),
+    'quiz.phpfig.q3' =>
+        array (
+            'class' => 'TheCodingMachine\\Quiz\\Model\\Question',
+            'external' => false,
+            'weak' => false,
+            'constructor' =>
+                array (
+                    0 =>
+                        array (
+                            'value' => 'When did PSR-8 enter DRAFT stage?',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    1 =>
+                        array (
+                            'value' =>
+                                array (
+                                    0 => 'December, 25th 2013',
+                                    1 => 'April, 1st 2014',
+                                    2 => 'June, 21st 2015',
+                                    3 => 'There is no PSR-8, you fool!',
+                                ),
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    2 =>
+                        array (
+                            'value' => '1',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    3 =>
+                        array (
+                            'value' => 'PSR-8, the "hug" PSR is an april fools joke by Larry Garfield. Since it was very successful and gathered enough votes to enter the DRAFT stage, it was attributed the next available number, which was number "8" at the time. There will be no other "serious" PSR-8 replacing this one.',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                ),
+        ),
+    'quiz.phpfig.q4' =>
+        array (
+            'class' => 'TheCodingMachine\\Quiz\\Model\\Question',
+            'external' => false,
+            'weak' => false,
+            'constructor' =>
+                array (
+                    0 =>
+                        array (
+                            'value' => 'PSR-7 is the PSR standardizing:',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    1 =>
+                        array (
+                            'value' =>
+                                array (
+                                    0 => 'HTTP Messages (Request, Response, Session)',
+                                    1 => 'HTTP Messages (Request, Response, Streams)',
+                                    2 => 'HTTP Messages (Request, Response) and HTTP Routers',
+                                    3 => 'Coffee machine PSR, but milk is out of scope',
+                                ),
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    2 =>
+                        array (
+                            'value' => '1',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                ),
+        ),
+    'quiz.phpfig.q5' =>
+        array (
+            'class' => 'TheCodingMachine\\Quiz\\Model\\Question',
+            'external' => false,
+            'weak' => false,
+            'constructor' =>
+                array (
+                    0 =>
+                        array (
+                            'value' => 'PSR-11 delegate lookup feature allows:',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    1 =>
+                        array (
+                            'value' =>
+                                array (
+                                    0 => 'retrieval of records from the database',
+                                    1 => 'running several dependency injection containers side-by-side',
+                                    2 => 'easy lookup into distributed filesystems',
+                                    3 => 'something else, completely',
+                                ),
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    2 =>
+                        array (
+                            'value' => '1',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                ),
+        ),
+    'quiz.phpninja.q1' =>
+        array (
+            'class' => 'TheCodingMachine\\Quiz\\Model\\Question',
+            'external' => false,
+            'weak' => false,
+            'constructor' =>
+                array (
+                    0 =>
+                        array (
+                            'value' => '<p>What is outputted by this code?</p><pre><code>var_dump(0.1+0.2==0.3);</code></pre>',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    1 =>
+                        array (
+                            'value' =>
+                                array (
+                                    0 => '<code>true</code>',
+                                    1 => '<code>false</code>',
+                                    2 => '<code>null</code>',
+                                    3 => '<code>INF</code>',
+                                ),
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    2 =>
+                        array (
+                            'value' => '1',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    3 =>
+                        array (
+                            'value' => '<p>This is rounding error due to the internal representation of the number \'0.1\' in binary. 0.1 has an infinite representation in binary (just like 1/3 is represented as 0.3333333... in decimal).</p><p>In binary, 0.1 is written 0.000110011001100110011..... This causes rounding errors when summing decimal numbers.</p><p>This is why you should <strong>never</strong> perform strict comparison on decimal numbers. By the way, this happens in every programming language and is not restricted to PHP.</p>',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                ),
+        ),
+    'quiz.phpninja.q2' =>
+        array (
+            'class' => 'TheCodingMachine\\Quiz\\Model\\Question',
+            'external' => false,
+            'weak' => false,
+            'constructor' =>
+                array (
+                    0 =>
+                        array (
+                            'value' => '<p>What are the correct signatures?</p>',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    1 =>
+                        array (
+                            'value' =>
+                                array (
+                                    0 => '<pre><code>strpos($haystack, $needle)<br/>array_search($haystack, $needle)</code></pre>',
+                                    1 => '<pre><code>strpos($needle, $haystack)<br/>array_search($haystack, $needle)</code></pre>',
+                                    2 => '<pre><code>strpos($needle, $haystack)<br/>array_search($needle, $haystack)</code></pre>',
+                                    3 => '<pre><code>strpos($haystack, $needle)<br/>array_search($needle, $haystack)</code></pre>',
+                                ),
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    2 =>
+                        array (
+                            'value' => '3',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                ),
+        ),
+    'quiz.phpninja.q3' =>
+        array (
+            'class' => 'TheCodingMachine\\Quiz\\Model\\Question',
+            'external' => false,
+            'weak' => false,
+            'constructor' =>
+                array (
+                    0 =>
+                        array (
+                            'value' => '<p>What is outputted by this code?</p><pre><code>var_dump(000===007);<br/>var_dump(000===008);</code></pre>',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    1 =>
+                        array (
+                            'value' =>
+                                array (
+                                    0 => '<pre><code>false<br/>false</code></pre>',
+                                    1 => '<pre><code>false<br/>true</code></pre>',
+                                    2 => '<pre><code>true<br/>false</code></pre>',
+                                    3 => '<pre><code>true<br/>true</code></pre>',
+                                ),
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    2 =>
+                        array (
+                            'value' => '1',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    3 =>
+                        array (
+                            'value' => '<p>Numbers starting with "0" are <i>octal</i> numbers. So the next number after 07 is 010 (which equals to decimal 8). But PHP does not emit any warning or error if you type "08", which is invalid. Instead, it will simply discard the 8... so 08 becomes 0. Hence, <code>000===008</code>.</p>',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                ),
+        ),
+    'quiz.phpninja.q4' =>
+        array (
+            'class' => 'TheCodingMachine\\Quiz\\Model\\Question',
+            'external' => false,
+            'weak' => false,
+            'constructor' =>
+                array (
+                    0 =>
+                        array (
+                            'value' => '<p>What is outputted by this code?</p><pre><code>echo (true ? \'a\' : false ? \'b\' : \'c\');</code></pre>',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    1 =>
+                        array (
+                            'value' =>
+                                array (
+                                    0 => 'a',
+                                    1 => 'b',
+                                    2 => 'c',
+                                    3 => 'd',
+                                ),
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    2 =>
+                        array (
+                            'value' => '1',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    3 =>
+                        array (
+                            'value' => '<p>In PHP, sadly, the ternary operator is left-associative. So PHP starts by evaluating this expression: <code>true ? \'a\' : false</code>. This yields the result "a"... which is passed to the second evaluation: <code>\'a\' ? \'b\' : \'c\'</code>. \'a\' is true, therefore, the final result is \'b\'.</p>',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                ),
+        ),
+    'quiz.phpninja.q5' =>
+        array (
+            'class' => 'TheCodingMachine\\Quiz\\Model\\Question',
+            'external' => false,
+            'weak' => false,
+            'constructor' =>
+                array (
+                    0 =>
+                        array (
+                            'value' => 'What are the correct function names?',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    1 =>
+                        array (
+                            'value' =>
+                                array (
+                                    0 => '<pre><code>get_type<br/>get_class<br/>str_cmp<br/>substr<br/>htmlentities<br/>htmlentitydecode</code></pre>',
+                                    1 => '<pre><code>gettype<br/>get_class<br/>strcmp<br/>substr<br/>htmlentities<br/>html_entity_decode</code></pre>',
+                                    2 => '<pre><code>gettype<br/>getclass<br/>strcmp<br/>substr<br/>html_entities<br/>html_entity_decode</code></pre>',
+                                    3 => '<pre><code>get_type<br/>getclass<br/>str_cmp<br/>substr<br/>html_entities<br/>htmlentitydecode</code></pre>',
+                                ),
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    2 =>
+                        array (
+                            'value' => '1',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                ),
+        ),
+    'quiz.phpninja.q6' =>
+        array (
+            'class' => 'TheCodingMachine\\Quiz\\Model\\Question',
+            'external' => false,
+            'weak' => false,
+            'constructor' =>
+                array (
+                    0 =>
+                        array (
+                            'value' => '<p>What is outputted by this code?</p><pre><code>var_dump(-INF < 0);<br/>var_dump(0 < true);<br/>var_dump(-INF < true);</code></pre>',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    1 =>
+                        array (
+                            'value' =>
+                                array (
+                                    0 => '<pre><code>true<br/>true<br/>false</code></pre>',
+                                    1 => '<pre><code>false<br/>true<br/>true</code></pre>',
+                                    2 => '<pre><code>true<br/>true<br/>true</code></pre>',
+                                    3 => '<pre><code>false<br/>false<br/>false</code></pre>',
+                                ),
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    2 =>
+                        array (
+                            'value' => '0',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                ),
+        ),
+    'quiz.phpstandard.q1' =>
+        array (
+            'class' => 'TheCodingMachine\\Quiz\\Model\\Question',
+            'external' => false,
+            'weak' => false,
+            'constructor' =>
+                array (
+                    0 =>
+                        array (
+                            'value' => 'By default, what is the attribution order of variables in the $_REQUEST superglobal?',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    1 =>
+                        array (
+                            'value' =>
+                                array (
+                                    0 => 'GET - COOKIE - POST',
+                                    1 => 'POST - COOKIE - GET',
+                                    2 => 'POST - GET - COOKIE',
+                                    3 => 'GET - POST - COOKIE',
+                                ),
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    2 =>
+                        array (
+                            'value' => '3',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    3 =>
+                        array (
+                            'value' => 'This can vary depending on your configuration... and this is why you should consider using PSR-7 Request objects insteads of relying on superglobals. They are <b>evil</b>!',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                ),
+        ),
+    'quiz.phpstandard.q2' =>
+        array (
+            'class' => 'TheCodingMachine\\Quiz\\Model\\Question',
+            'external' => false,
+            'weak' => false,
+            'constructor' =>
+                array (
+                    0 =>
+                        array (
+                            'value' => 'Which PHP output buffering function sends data from the buffer to the browser and stops output buffering?',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    1 =>
+                        array (
+                            'value' =>
+                                array (
+                                    0 => '<code>ob_flush()</code>',
+                                    1 => '<code>ob_end_flush()</code>',
+                                    2 => '<code>ob_get_flush()</code>',
+                                    3 => '<code>ob_get_flush()</code>',
+                                ),
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    2 =>
+                        array (
+                            'value' => '1',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    3 =>
+                        array (
+                            'value' => '<code>ob_end_flush()</code> sends data from the output buffer and closes the output buffering.<br /><code>ob_flush()</code> sends data from the output buffer.<br /><code>ob_get_flush()</code> empties the output buffer but returns its content as a character string and stops buffering.<br /><code>ob_flush_cache()</code> doesn\'t exist.',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                ),
+        ),
+    'quiz.phpstandard.q3' =>
+        array (
+            'class' => 'TheCodingMachine\\Quiz\\Model\\Question',
+            'external' => false,
+            'weak' => false,
+            'constructor' =>
+                array (
+                    0 =>
+                        array (
+                            'value' => 'What is displayed if we evaluate this piece of code?<pre><code>$a = \'a\'.file_exists(__FILE__);<br />$a1 = \'The Coding Machine\';<br />$a2 = \'TCM\';<br />echo ${$a};</code></pre>',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    1 =>
+                        array (
+                            'value' =>
+                                array (
+                                    0 => 'Nothing',
+                                    1 => 'The Coding Machine',
+                                    2 => 'TCM',
+                                    3 => 'An error',
+                                ),
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    2 =>
+                        array (
+                            'value' => '1',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    3 =>
+                        array (
+                            'value' => '<code>file_exists</code> returns TRUE that is concatenated as "1" in a PHP string. <code>$a</code> therefore contains \'a1\', so <code>${$a}</code> evaluates to <code>${a1}</code> which is \'The Coding Machine\' ;) !',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                ),
+        ),
+    'quiz.phpstandard.q4' =>
+        array (
+            'class' => 'TheCodingMachine\\Quiz\\Model\\Question',
+            'external' => false,
+            'weak' => false,
+            'constructor' =>
+                array (
+                    0 =>
+                        array (
+                            'value' => 'What is the value of <code>$numbers</code> after executing this code?<pre><code>$numbers = [ 2, 4, 42 ];<br/>foreach ($numbers as $value){<br/>    $value /= 2;<br/>}</code></pre>',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    1 =>
+                        array (
+                            'value' =>
+                                array (
+                                    0 => '<code>[1,2,3]</code>',
+                                    1 => '<code>[2,4,42]</code>',
+                                    2 => '<code>[4,8,84]</code>',
+                                    3 => 'It outputs an error message',
+                                ),
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    2 =>
+                        array (
+                            'value' => '1',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    3 =>
+                        array (
+                            'value' => 'The <code>$value</code> variable is passed by value to the foreach loop. Therefore, altering it does not alter the value inside the <code>$numbers</code> array. If you wanted to impact the <code>numbers</code> array, you should write:<pre><code>$numbers = [ 2, 4, 42 ];<br/>foreach ($numbers as &$value){<br/>    $value /= 2;<br/>}</code></pre>',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                ),
+        ),
+    'quiz.phpstandard.q5' =>
+        array (
+            'class' => 'TheCodingMachine\\Quiz\\Model\\Question',
+            'external' => false,
+            'weak' => false,
+            'constructor' =>
+                array (
+                    0 =>
+                        array (
+                            'value' => 'What will be displayed in a browser when the following PHP code is executed:<pre><code>$foo = 1;<br/>switch ($foo) {<br/>    case 1:<br/>        echo "Bar";<br/>    default:<br/>        echo "Baz";<br/>}</code></pre>',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    1 =>
+                        array (
+                            'value' =>
+                                array (
+                                    0 => 'Bar',
+                                    1 => 'Baz',
+                                    2 => 'BarBaz',
+                                    3 => '<i>Nothing</i>',
+                                ),
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    2 =>
+                        array (
+                            'value' => '2',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    3 =>
+                        array (
+                            'value' => 'Never forget the <code>break</code> statements in your <code>switch</code> conditions, otherwise, the next <code>case</code> will be executed too!',
+                            'parametertype' => 'primitive',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                ),
+        ),
+    'quizController' =>
+        array (
+            'class' => 'TheCodingMachine\\Quiz\\Controllers\\QuizController',
+            'external' => false,
+            'weak' => false,
+            'constructor' =>
+                array (
+                    0 =>
+                        array (
+                            'value' => 'psr.errorLogLogger',
+                            'parametertype' => 'object',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    1 =>
+                        array (
+                            'value' => 'joomlaTemplate',
+                            'parametertype' => 'object',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    2 =>
+                        array (
+                            'value' => 'block.content',
+                            'parametertype' => 'object',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    3 =>
+                        array (
+                            'value' => 'twigEnvironment',
+                            'parametertype' => 'object',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                    4 =>
+                        array (
+                            'value' =>
+                                array (
+                                    0 => 'quiz.main.phpstandard',
+                                    1 => 'quiz.main.phpfig',
+                                    2 => 'quiz.main.phpninja',
+                                ),
+                            'parametertype' => 'object',
+                            'type' => 'string',
+                            'metadata' =>
+                                array (
+                                ),
+                        ),
+                ),
+        ),
+
 ));
 
 
@@ -1048,13 +1842,6 @@ return rtrim(sys_get_temp_dir(), '/\\').'/mouftwigtemplatemain_'.$posixGetuid.st
 	 */
 	 public static function getPsr_errorLogLogger() {
 	 	return MoufManager::getMoufManager()->get('psr.errorLogLogger');
-	 }
-
-	/**
-	 * @return TheCodingMachine\Quiz\Controllers\QuizController
-	 */
-	 public static function getQuizController() {
-	 	return MoufManager::getMoufManager()->get('quizController');
 	 }
 
 	/**

@@ -446,12 +446,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecodingmachine/integration.joomla.moufla.git",
-                "reference": "803b910271ae0fc62f4fa2f262e5e0da5a47f529"
+                "reference": "22a531f9d4c68f6f187fdcd1bac342497a50027b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecodingmachine/integration.joomla.moufla/zipball/803b910271ae0fc62f4fa2f262e5e0da5a47f529",
-                "reference": "803b910271ae0fc62f4fa2f262e5e0da5a47f529",
+                "url": "https://api.github.com/repos/thecodingmachine/integration.joomla.moufla/zipball/22a531f9d4c68f6f187fdcd1bac342497a50027b",
+                "reference": "22a531f9d4c68f6f187fdcd1bac342497a50027b",
                 "shasum": ""
             },
             "require": {
@@ -474,7 +474,6 @@
                         {
                             "type": "class",
                             "class": "Mouf\\Integration\\Joomla\\Moufla\\MouflaInstaller",
-                            "scope": "local",
                             "description": "Install routers to handle Joomla. This is Moufla!"
                         }
                     ],
@@ -518,7 +517,7 @@
                 "mvc",
                 "splash"
             ],
-            "time": "2015-11-20 13:45:58"
+            "time": "2015-11-20 13:52:29"
         },
         {
             "name": "mouf/integration.joomla.moufla-joomlacomponent",

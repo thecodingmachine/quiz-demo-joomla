@@ -75,4 +75,11 @@ return array (
     'file' => 'src/validatorsInstall.php',
     'package' => 'mouf/utils.common.validators',
   ),
+  10 => 
+  array (
+    'status' => 'done',
+    'type' => 'class',
+    'class' => 'Mouf\\Integration\\Joomla\\Moufla\\MouflaInstaller',
+    'package' => 'mouf/integration.joomla.moufla',
+  ),
 );

@@ -1,5 +1,5 @@
-Quiz demo: Mouf + Wordpress
-===========================
+Quiz demo: Mouf + Joomla
+========================
 
 This repository contains a PHP Quiz demo application, running on Joomla.
 
